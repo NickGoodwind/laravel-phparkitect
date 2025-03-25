@@ -31,7 +31,7 @@ because('it\'s a Laravel naming convention', function () {
 because('it\'s a Laravel naming convention', function () {
     return Rule::allClasses()
         ->that(new ResideInOneOfTheseNamespaces('App\*\Repositories'))
-        ->should(new HaveNameMatching('*Repository'));
+        ->should(new HaveNameMatching('*Impl'));
 });
 
 because('it\'s a Laravel naming convention', function () {
